@@ -122,6 +122,10 @@
                     <input type="password" class="form-control" id="RegisterPassword" placeholder="Password:" required />
                     <div class="invalid-feedback">Please enter a password.</div>
                 </div>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="RepositoryUrl" placeholder="Repository URL" required />
+                    <div class="invalid-feedback">Please enter Repository URL</div>
+                </div>
                 
                 <div class="col-12 mt-0">
                   <button class="btnMedium" type="submit" id="desktopBtn">
@@ -323,7 +327,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
     }
 
     try {
-      const response = await fetch("http://dashboardshriii-360.up.railway.app/api/auth/register", {
+      const response = await fetch("http://localhost:5000/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
