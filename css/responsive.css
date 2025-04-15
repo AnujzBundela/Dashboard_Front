@@ -42,7 +42,35 @@
   font-size: 36px;
 }
 
+.footerIllustrations{
+display: none;
+}
 
+#Mynavbar {
+  position: fixed;
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+  text-wrap: nowrap;
+  padding-top: 30px;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 444;
+}
+.navbarToggleBtn {
+  display: block;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 23px -1px rgba(0,0,0,0.26);
+-moz-box-shadow: 4px 4px 23px -1px rgba(0,0,0,0.26);
+box-shadow: 4px 4px 23px -1px rgba(0, 0, 0, 0.26);
+}
+#Mynavbar.slideNav {
+  transform: translateX(0%);
+  z-index: 444;
+}
+.navCloseBtn {
+  display: block;
+}
  }
 
 @media (max-width: 991.98px) { 
@@ -136,7 +164,6 @@ footer .container>.row{
  text-align: center;
 }
 .LogInBanner .container>.row{
-  flex-direction: column-reverse;
   row-gap: 24px;
 }
 
